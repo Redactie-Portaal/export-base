@@ -6,6 +6,12 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/Redactie-Portaal/Export.Base</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/Redactie-Portaal/Export.Base</RepositoryUrl>
+	  <PackageId>Export.Base</PackageId>
+	  <Version>1.0.0</Version>
+	  <Authors>Joep van Diessen</Authors>
+	  <Company>AutheurPortaal</Company>
+	  <PackageDescription>Base interfaces for an export plugin.</PackageDescription>
   </PropertyGroup>
 
 </Project>
