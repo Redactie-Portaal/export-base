@@ -13,8 +13,6 @@ jobs:
   build:
     runs-on: ubuntu-18.04
     name: Update NuGet package
-    env:
-      working-directory: ./Export.Base
     steps:
 
       - name: Checkout repository
