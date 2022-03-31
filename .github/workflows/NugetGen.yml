@@ -4,11 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    types: [closed]
-    branches:
-      - main
-
 jobs:
   build:
     runs-on: ubuntu-18.04
@@ -26,7 +21,8 @@ jobs:
           NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}        
           
       - name: Build solution and generate NuGet package
-        run: | 
+        run: |
+          cd Export.Base
           dotnet build -c Release
           dotnet pack -c Release -o out -p:PackageVersion=1.0.${{ github.run_number }} 
 
