@@ -2,6 +2,7 @@
 {
     public interface IExportPlugin
     {
+        public Guid Id { get; }
         public string Name { get; }
         public string Description { get; }
 
