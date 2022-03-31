@@ -27,4 +27,4 @@ jobs:
           dotnet pack -c Release -o out -p:PackageVersion=1.0.${{ github.run_number }} 
 
       - name: Push generated package to GitHub registry
-        run: dotnet nuget push ./Export.Base/out/*.nupkg --skip-duplicate --no-symbols true --api-key ${{secrets.GITHUB_TOKEN}}       
+        run: dotnet nuget push ./Export.Base/out/*.nupkg --skip-duplicate --no-symbols true --api-key ${{secrets.GITHUB_TOKEN}} --source "github"      
