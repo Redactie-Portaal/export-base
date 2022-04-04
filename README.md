@@ -12,7 +12,7 @@ Base library om een export plugin te maken.
 </packageSources>
 <packageSourceCredentials>
         <github>
-            <add key="Username" value="joepvand" />
+            <add key="Username" value="GITHUB USERNAME" />
             <add key="ClearTextPassword" value="GITHUB PERSONAL ACCESS TOKEN" />
         </github>
     </packageSourceCredentials>
