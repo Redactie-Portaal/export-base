@@ -8,7 +8,7 @@ Base library om een export plugin te maken.
 2. voeg het volgende toe aan __AppData\Roaming\NuGet\Nuget.Config__
   ```yaml
 <packageSources>
-    <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
+  <add key="github" value="https://nuget.pkg.github.com/Redactie-Portaal/index.json" />
 </packageSources>
 <packageSourceCredentials>
         <github>
