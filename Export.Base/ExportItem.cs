@@ -11,8 +11,8 @@ namespace Export.Base
         public string? Name { get; set; }
         public string? ShortText { get; set; }
         public string? TextContent { get; set; }
-        public Uri? VideoUri { get; set; }
+        public Uri[]? VideoUri { get; set; }
         public string[]? Images { get; set; }
-        public Uri? AudioUri {get; set; }
+        public Uri[]? AudioUri {get; set; }
     }
 }
