@@ -16,7 +16,7 @@ namespace Export.Base
 
         public Task Upload(ExportItem item, string apyKey, CancellationToken cancellationToken = default);
 
-        public string TruncateForSocialMedia(string value, int length)
+        public string TruncateForSocialMedia(string? value, int length)
         {
             if (string.IsNullOrEmpty(value)) return string.Empty;
             var returnValue = value;
