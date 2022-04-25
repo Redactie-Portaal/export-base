@@ -18,12 +18,11 @@ namespace Export.Base
 
         public string TruncateForSocialMedia(string value, int length)
         {
-            var x = "aaaaaaaafasdf";
             if (string.IsNullOrEmpty(value)) return string.Empty;
-            var returnValue = x;
-            if (value.Length > 5)
+            var returnValue = value;
+            if (value.Length > length)
             {
-                var tmp = x.Substring(0, length) ;
+                var tmp = value.Substring(0, length) ;
                 if (tmp.LastIndexOf(' ') > 0)
                     returnValue = tmp.Substring(0, tmp.LastIndexOf(' ') ) + " ...";
             }                
